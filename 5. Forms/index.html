@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <p>Username:
+            <input required type="text" name="username" size="15" maxlength="30" />
+        </p>
+        <p>Password:
+            <input type="password" name="password" size="15" maxlength="30" />
+        </p>
+
+        <p>What did you think of this gig?</p>
+
+        <textarea name="comments" cols="30" rows="8" placeholder="enter your comment"></textarea>
+
+        <p>Please select your favorite genre:
+            <br />
+            <input type="radio" name="genre" value="rock" checked />
+            Rock
+            <input type="radio" name="genre" value="pop" checked />
+            Pop
+            <input type="radio" name="genre" value="jazz" />
+            Jazz
+        </p>
+        <p>Please select your favorite food:
+            <br />
+            <input type="radio" name="food" value="rock" />
+            Biryani
+            <input type="radio" name="food" value="pop" />
+            Burger
+            <input type="radio" name="food" value="jazz" />
+            Pizza
+        </p>
+
+        <p>Please select your favorite music service(s):
+            <br />
+            <input type="checkbox" name="service" value="itunes" checked />
+            iTunes
+            <input type="checkbox" name="service" value="lastfm" checked />
+            Last.fm
+            <input type="checkbox" name="service" value="spotify" />
+            Spotify
+        </p>
+        <p>What device do you listen to music on?</p>
+        <select name="devices" multiple>
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+
+        <br>
+        <br>
+
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" accept="image/*" />
+        <!-- mime type -->
+
+        <br>
+        <br>
+
+        <!-- <input type="submit" name="subscribe" value="Signup" /> -->
+        <button type="submit">Signup</button>
+
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
