@@ -10,25 +10,42 @@
 
 <body>
     <form>
-        <p>Username:
+        <label>Username:
             <input required type="text" name="username" size="15" maxlength="30" />
-        </p>
-        <p>Password:
+        </label>
+
+        <br>
+        
+        <label for="pass"> Password: </label>
+        <input id="pass" type="password" name="password" size="15" maxlength="30" />
+        
+        <br>
+        
+        <label>age:
             <input type="password" name="password" size="15" maxlength="30" />
-        </p>
-
-        <p>What did you think of this gig?</p>
-
-        <textarea name="comments" cols="30" rows="8" placeholder="enter your comment"></textarea>
+        </label>
+        
+        <br>
+        
+        <label>What did you think of this gig?
+            <br>
+            <textarea name="comments" cols="30" rows="8" placeholder="enter your comment"></textarea>
+        </label>
+        
+        <br>
 
         <p>Please select your favorite genre:
             <br />
-            <input type="radio" name="genre" value="rock" checked />
-            Rock
-            <input type="radio" name="genre" value="pop" checked />
-            Pop
-            <input type="radio" name="genre" value="jazz" />
-            Jazz
+            <label>
+                <input type="radio" name="genre" value="rock" checked />
+                Rock
+            </label>
+
+            <input id="fav_select_pop" type="radio" name="genre" value="pop" checked />
+            <label for="fav_select_pop"> Pop </label>
+
+            <input id="fav_select_jazz" type="radio" name="genre" value="jazz" />
+            <label for="fav_select_jazz"> Jazz </label>
         </p>
         <p>Please select your favorite food:
             <br />
